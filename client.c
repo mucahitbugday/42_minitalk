@@ -34,7 +34,8 @@ int	ft_atoi(const char *str)
 		result = result * 10 + (str[i++] - '0');
 	return ((int)result * sign);
 }
-// Onları sunucuma göndermek için karakterimi bitlere dönüştürüyorum
+
+//sunucuya göndermek için bit'e çevir
 void	convert_char(char c, int pid)
 {
 	int	i;

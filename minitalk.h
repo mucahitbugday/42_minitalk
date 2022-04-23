@@ -1,10 +1,10 @@
 #ifndef MINITALK_H
 # define MINITALK_H
 
-# include <unistd.h>
+# include <unistd.h> 
 # include <stdio.h>
 # include <signal.h>
-# include <stdlib.h>
+# include <stdlib.h> //Bellek kontrolü
 
 void	ft_putchar(char c);
 void	ft_putstr(char *str);
