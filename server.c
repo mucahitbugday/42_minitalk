@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   server.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/05/17 14:46:01 by mbugday           #+#    #+#             */
+/*   Updated: 2022/05/17 14:46:03 by mbugday          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "./minitalk.h"
 
 void	ft_putchar(char c)
@@ -34,7 +46,6 @@ void	ft_putnbr(int nb)
 	ft_putchar(nb % 10 + '0');
 }
 
-// Karakteri yeniden oluşturmak için gönderilen farklı bitlerin çevirisi
 void	message(int num)
 {
 	static int	power;
@@ -51,7 +62,6 @@ void	message(int num)
 	}
 }
 
-//8 bit iletildikten sonra karakteri görüntüleyebileceğim
 int	main(int argc, char **argv)
 {
 	pid_t	pid;

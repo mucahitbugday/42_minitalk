@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   client.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/05/17 14:46:10 by mbugday           #+#    #+#             */
+/*   Updated: 2022/05/17 14:46:11 by mbugday          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "./minitalk.h"
 
 int	ft_isdigit(int c)
@@ -35,7 +47,6 @@ int	ft_atoi(const char *str)
 	return ((int)result * sign);
 }
 
-//sunucuya göndermek için bit'e çevir
 void	convert_char(char c, int pid)
 {
 	int	i;
@@ -51,7 +62,7 @@ void	convert_char(char c, int pid)
 		i--;
 	}
 }
-//kullan ./client arg[PID] arg[MSG]
+
 int	main(int argc, char **argv)
 {
 	int	pid;

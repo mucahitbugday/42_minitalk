@@ -1,7 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   minitalk.h                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/05/17 14:46:05 by mbugday           #+#    #+#             */
+/*   Updated: 2022/05/17 14:46:06 by mbugday          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef MINITALK_H
 # define MINITALK_H
 
-# include <unistd.h> 
+# include <unistd.h>
 # include <stdio.h>
 # include <signal.h>
 # include <stdlib.h> //Bellek kontrolü
