@@ -6,46 +6,11 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/17 14:46:10 by mbugday           #+#    #+#             */
-/*   Updated: 2022/05/17 14:46:11 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/05/17 15:09:30 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./minitalk.h"
-
-int	ft_isdigit(int c)
-{
-	if (c >= '0' && c <= '9')
-		return (1);
-	return (0);
-}
-
-int	ft_atoi(const char *str)
-{
-	long	i;
-	long	max;
-	long	sign;
-	long	result;
-
-	i = 0;
-	max = 0;
-	sign = 1;
-	result = 0;
-	while (str[i] == '\t' || str[i] == '\n' || str[i] == '\v'
-		|| str[i] == '\f' || str[i] == '\r' || str[i] == ' ')
-		i++;
-	while (str[i] == '-' || str[i] == '+')
-	{
-		if (max >= 1)
-			return (0);
-		if (str[i] == '-')
-			sign = -sign;
-		max++;
-		i++;
-	}
-	while (ft_isdigit(str[i]))
-		result = result * 10 + (str[i++] - '0');
-	return ((int)result * sign);
-}
 
 void	convert_char(char c, int pid)
 {

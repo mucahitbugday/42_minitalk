@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/17 14:46:05 by mbugday           #+#    #+#             */
-/*   Updated: 2022/05/17 14:46:06 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/05/17 15:10:14 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <signal.h>
-# include <stdlib.h> //Bellek kontrolü
+# include <stdlib.h>
 
 void	ft_putchar(char c);
 void	ft_putstr(char *str);
